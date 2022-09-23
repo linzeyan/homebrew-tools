@@ -10,7 +10,7 @@ class OpsCli < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/linzeyan/ops-cli/releases/download/v0.9.3/ops-cli_v0.9.3_darwin_amd64.tar.gz"
-      sha256 "162e05050a7051c64b795f70eb7334b1d01507dc5b6b1caad2d2a865a6cdbe9f"
+      sha256 "8e36a3fd66e7f14e640b29876dc0c638efa28c2207abd2ba91c83ed2ab9a0a0d"
 
       def install
         bin.install "ops-cli"
@@ -18,7 +18,7 @@ class OpsCli < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/linzeyan/ops-cli/releases/download/v0.9.3/ops-cli_v0.9.3_darwin_arm64.tar.gz"
-      sha256 "c834e36590d8547d8fde8f386f9b21d895c823a2d0e60631b7ada988e8d9f1b2"
+      sha256 "b94b15ef2f37e0068fa87fca72502a2aeb6fab0126cbe3556a23d6107b2a424a"
 
       def install
         bin.install "ops-cli"
@@ -29,7 +29,7 @@ class OpsCli < Formula
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/linzeyan/ops-cli/releases/download/v0.9.3/ops-cli_v0.9.3_linux_amd64.tar.gz"
-      sha256 "6e7b225adf5fa8815ca543d971645186496777ca91ca0ac7095fc49383ecaf8b"
+      sha256 "a5f38be364e4414d4806b80eaf18741ed5e7e6a5cd98b9838eda7dd1f1cad427"
 
       def install
         bin.install "ops-cli"
@@ -37,7 +37,7 @@ class OpsCli < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/linzeyan/ops-cli/releases/download/v0.9.3/ops-cli_v0.9.3_linux_arm64.tar.gz"
-      sha256 "9475b3d7245790b59d585afcfdbe56098f9552345b077f8b2817ef510946494a"
+      sha256 "5a5d98ad78ec92859df322e01b042bb62f4efaca99d16406720b2bc8fc190dd1"
 
       def install
         bin.install "ops-cli"
