@@ -5,20 +5,20 @@
 class OpsCli < Formula
   desc ""
   homepage "https://github.com/linzeyan/homebrew-tools"
-  version "0.12.1"
+  version "0.12.2"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/linzeyan/ops-cli/releases/download/v0.12.1/ops-cli_v0.12.1_darwin_amd64.tar.gz"
-      sha256 "13fa3bd213c84408045d689f7c38d1ea6a9f599df24d83f291d0f659a7613464"
+    if Hardware::CPU.arm?
+      url "https://github.com/linzeyan/ops-cli/releases/download/v0.12.2/ops-cli_v0.12.2_darwin_arm64.tar.gz"
+      sha256 "8d1f690c72530972627141116df26cf4767cc3f433aa9f015f13c13a386e8804"
 
       def install
         bin.install "ops-cli"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/linzeyan/ops-cli/releases/download/v0.12.1/ops-cli_v0.12.1_darwin_arm64.tar.gz"
-      sha256 "c34ecfc6a5faf7e6b56870ec07138a6067a4835e3c3c958fec8a1bb194f323a3"
+    if Hardware::CPU.intel?
+      url "https://github.com/linzeyan/ops-cli/releases/download/v0.12.2/ops-cli_v0.12.2_darwin_amd64.tar.gz"
+      sha256 "7b02a2f9f43e792eb6c0122d83ed8c5f9250c6a755e563a9c3dbf290908b29bd"
 
       def install
         bin.install "ops-cli"
@@ -28,16 +28,16 @@ class OpsCli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/linzeyan/ops-cli/releases/download/v0.12.1/ops-cli_v0.12.1_linux_arm64.tar.gz"
-      sha256 "013fd69939b052c6e315bec3c75befa4d5dc237bccf1bb1425a80047ef43b8e0"
+      url "https://github.com/linzeyan/ops-cli/releases/download/v0.12.2/ops-cli_v0.12.2_linux_arm64.tar.gz"
+      sha256 "6225046dd5df389eb7a25c4b101dae14f2e396899d957ee3a5d21adc88ffe1dd"
 
       def install
         bin.install "ops-cli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/linzeyan/ops-cli/releases/download/v0.12.1/ops-cli_v0.12.1_linux_amd64.tar.gz"
-      sha256 "d75216207c0b078b2600864e628d4d599b2d20309425ad9db4f8a08e7ce782fe"
+      url "https://github.com/linzeyan/ops-cli/releases/download/v0.12.2/ops-cli_v0.12.2_linux_amd64.tar.gz"
+      sha256 "e7dcc34e4f4fe52b53272e2bc745cb011aa89a31fb839f403bbcaba0b9f33539"
 
       def install
         bin.install "ops-cli"
