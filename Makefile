@@ -1,8 +1,9 @@
 FORMULAS := formatter ops-cli redis-top-keys-analyzer pm
+CASKS := rayui
 
-.PHONY: all $(FORMULAS) clean
+.PHONY: all $(FORMULAS) $(CASKS) clean
 
-all: $(FORMULAS)
+all: $(FORMULAS) $(CASKS)
 
 formatter:
 	@./scripts/update.sh linzeyan/formatter Formula/formatter.rb
@@ -15,6 +16,9 @@ redis-top-keys-analyzer:
 
 pm:
 	@./scripts/update.sh linzeyan/proxy-manager Formula/pm.rb
+
+rayui:
+	@./scripts/update-cask.sh linzeyan/RayUI Casks/rayui.rb
 
 clean:
 	@echo "Nothing to clean"
