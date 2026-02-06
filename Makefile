@@ -1,5 +1,5 @@
 FORMULAS := formatter ops-cli redis-top-keys-analyzer pm
-CASKS := rayui
+CASKS := rayui asdf-gui
 
 .PHONY: all $(FORMULAS) $(CASKS) clean
 
@@ -19,6 +19,9 @@ pm:
 
 rayui:
 	@./scripts/update-cask.sh linzeyan/RayUI Casks/rayui.rb
+
+asdf-gui:
+	@./scripts/update-cask.sh linzeyan/asdf-gui Casks/asdf-gui.rb
 
 clean:
 	@echo "Nothing to clean"
