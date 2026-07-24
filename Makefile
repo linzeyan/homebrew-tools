@@ -1,5 +1,5 @@
 FORMULAS := formatter ops-cli redis-top-keys-analyzer pm
-CASKS := rayui asdf-gui
+CASKS := rayui asdf-gui assistant marknote
 
 .PHONY: all $(FORMULAS) $(CASKS) clean
 
@@ -22,6 +22,12 @@ rayui:
 
 asdf-gui:
 	@./scripts/update-cask.sh linzeyan/asdf-gui Casks/asdf-gui.rb
+
+assistant:
+	@./scripts/update-cask.sh linzeyan/assistant Casks/assistant.rb
+
+marknote:
+	@./scripts/update-cask.sh Cacao-s/marknote-official Casks/marknote.rb
 
 clean:
 	@echo "Nothing to clean"
