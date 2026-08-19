@@ -9,11 +9,29 @@ if [ -z "$REPO" ] || [ -z "$CASK_FILE" ]; then
     exit 1
 fi
 
+# Authenticated API calls when a token is available: unauthenticated requests are
+# rate limited per IP, which CI runners share and exhaust quickly.
+CURL_AUTH=()
+if [ -n "$GITHUB_TOKEN" ]; then
+    CURL_AUTH=(-H "Authorization: Bearer $GITHUB_TOKEN")
+fi
+
 # 1. Get latest version from GitHub
-LATEST_VERSION=$(curl -s "https://api.github.com/repos/$REPO/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+LATEST_VERSION=$(curl -s "${CURL_AUTH[@]}" "https://api.github.com/repos/$REPO/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
 VERSION_CLEAN=${LATEST_VERSION#v}
 
 CURRENT_VERSION=$(grep -E '^[[:space:]]*version "' "$CASK_FILE" | sed -E 's/.*"([^"]+)".*/\1/')
+
+# Bail out before touching the file: an empty version would make the sed below
+# blank out the version string in the cask.
+if [ -z "$VERSION_CLEAN" ]; then
+    echo "Error: could not resolve latest release of $REPO (rate limited or no release?)"
+    exit 1
+fi
+if [ -z "$CURRENT_VERSION" ]; then
+    echo "Error: could not read current version from $CASK_FILE"
+    exit 1
+fi
 
 echo "Checking $REPO: Current $CURRENT_VERSION, Latest $VERSION_CLEAN"
 
