@@ -1,5 +1,5 @@
-FORMULAS := formatter ops-cli redis-top-keys-analyzer pm
-CASKS := rayui asdf-gui assistant marknote
+FORMULAS := formatter ops-cli redis-top-keys-analyzer pm apitool poly gowebp
+CASKS := rayui asdf-gui assistant marknote dbclient
 
 .PHONY: all $(FORMULAS) $(CASKS) clean
 
@@ -17,6 +17,15 @@ redis-top-keys-analyzer:
 pm:
 	@./scripts/update.sh linzeyan/proxy-manager Formula/pm.rb
 
+apitool:
+	@./scripts/update.sh linzeyan/testing Formula/apitool.rb
+
+poly:
+	@./scripts/update.sh linzeyan/vscode-syntax Formula/poly.rb
+
+gowebp:
+	@./scripts/update.sh linzeyan/webp-go Formula/gowebp.rb
+
 rayui:
 	@./scripts/update-cask.sh linzeyan/RayUI Casks/rayui.rb
 
@@ -28,6 +37,9 @@ assistant:
 
 marknote:
 	@./scripts/update-cask.sh Cacao-s/marknote-official Casks/marknote.rb
+
+dbclient:
+	@./scripts/update-cask.sh linzeyan/dbeaver Casks/dbclient.rb
 
 clean:
 	@echo "Nothing to clean"
