@@ -1,0 +1,24 @@
+{
+    "version": "0.105.0",
+    "description": "Small, portable Postman-style API client (GUI and CLI)",
+    "homepage": "https://github.com/linzeyan/testing",
+    "license": "Unknown",
+    "notes": [
+        "apitool updates itself in place, which bypasses Scoop.",
+        "Set Settings > Updates to \"never\" and upgrade with: scoop update apitool"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/linzeyan/testing/releases/download/v0.105.0/apitool-v0.105.0-x86_64-pc-windows-msvc.zip",
+            "hash": "acb6908fd44fb30ddad953aa1769c0de4a5a416621ae5411e463d3e8766a5732"
+        }
+    },
+    "bin": "apitool-cli.exe",
+    "shortcuts": [
+        [
+            "apitool.exe",
+            "apitool"
+        ]
+    ],
+    "persist": "workspace"
+}

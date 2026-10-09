@@ -1,0 +1,26 @@
+{
+    "version": "0.8.27",
+    "description": "Native Windows screenshot and recording tool, built without any network features",
+    "homepage": "https://github.com/linzeyan/macshot",
+    "license": "GPL-3.0-only",
+    "notes": [
+        "macshot updates itself in place, which bypasses Scoop.",
+        "Turn off automatic update checks in Preferences and upgrade with: scoop update macshot-offline"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/linzeyan/macshot/releases/download/v0.8.27/macshot-Offline-0.8.27-win-x64.zip",
+            "hash": "cce044385922e2765c8a62c5b8f5dc7c8d26d9c0f821362585425daacac635dd"
+        },
+        "arm64": {
+            "url": "https://github.com/linzeyan/macshot/releases/download/v0.8.27/macshot-Offline-0.8.27-win-arm64.zip",
+            "hash": "e38678d6243424f198d4597fdd8b496b4c08b1b9a1aef7083ad0032daa0d8c67"
+        }
+    },
+    "shortcuts": [
+        [
+            "Macshot.Windows.Offline.exe",
+            "macshot (Offline)"
+        ]
+    ]
+}

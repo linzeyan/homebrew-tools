@@ -29,7 +29,7 @@ jobs:
 
       - name: Commit and push updates
         run: |
-          changed=$(git diff --name-only -- Formula Casks)
+          changed=$(git diff --name-only -- Formula Casks bucket)
           if [ -z "$changed" ]; then
             echo "Everything is up to date."
             exit 0
@@ -38,11 +38,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # One commit per tool, matching the existing history style.
-          for file in $changed; do
-            name=$(basename "$file" .rb)
-            version=$(grep -E '^[[:space:]]*version "' "$file" | head -1 | sed -E 's/.*"([^"]+)".*/\1/')
-            git add "$file"
+          # One commit per tool (formula or cask plus its Scoop manifest),
+          # matching the existing history style.
+          for name in $(for f in $changed; do basename "${f%.*}"; done | sort -u); do
+            files=$(printf '%s\n' $changed | grep -E "/$name\.(rb|json)$")
+            # Matches both Ruby `version "x"` and JSON `"version": "x"`.
+            version=$(grep -hE '^[[:space:]]*"?version"?:?[[:space:]]+"' $files | head -1 | sed -E 's/.*"([^"]+)".*/\1/')
+            git add $files
             git commit -m "$name bump version to $version"
           done
 

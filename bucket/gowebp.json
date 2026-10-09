@@ -1,0 +1,17 @@
+{
+    "version": "0.1.2",
+    "description": "Pure-Go WebP encoder CLI",
+    "homepage": "https://github.com/linzeyan/webp-go",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/linzeyan/webp-go/releases/download/v0.1.2/gowebp-v0.1.2-windows-amd64.exe#/gowebp.exe",
+            "hash": "13f14d558bef578e302334f05fac9027f077b79ddc0f8d1bc13faf5062cfff7b"
+        },
+        "arm64": {
+            "url": "https://github.com/linzeyan/webp-go/releases/download/v0.1.2/gowebp-v0.1.2-windows-arm64.exe#/gowebp.exe",
+            "hash": "7b7b3a542049b57aa427fc709bb27d74ee655e8e58ae6b3059c2f351596de290"
+        }
+    },
+    "bin": "gowebp.exe"
+}

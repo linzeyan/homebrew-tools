@@ -1,0 +1,23 @@
+{
+    "version": "0.1.0",
+    "description": "A cross-platform desktop GUI for asdf version manager",
+    "homepage": "https://github.com/linzeyan/asdf-gui",
+    "license": "Unknown",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/linzeyan/asdf-gui/releases/download/v0.1.0/asdf-gui_0.1.0_amd64-setup.exe#/dl.7z",
+            "hash": "e5a422e39caed599b496030f20c68a2ff57e81f331ad1f180b58ed52e9d3e96c"
+        },
+        "arm64": {
+            "url": "https://github.com/linzeyan/asdf-gui/releases/download/v0.1.0/asdf-gui_0.1.0_arm64-setup.exe#/dl.7z",
+            "hash": "36b0ebcd0fb6b2bc5d141fb6021b3741d16e82b39a54eea1527f34f4f5a2515f"
+        }
+    },
+    "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninstall.exe\" -Force -Recurse -ErrorAction Ignore",
+    "shortcuts": [
+        [
+            "asdf-gui.exe",
+            "asdf-gui"
+        ]
+    ]
+}

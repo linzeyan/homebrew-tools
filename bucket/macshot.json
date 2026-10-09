@@ -1,0 +1,26 @@
+{
+    "version": "0.8.27",
+    "description": "Native Windows screenshot and recording tool",
+    "homepage": "https://github.com/linzeyan/macshot",
+    "license": "GPL-3.0-only",
+    "notes": [
+        "macshot updates itself in place, which bypasses Scoop.",
+        "Turn off automatic update checks in Preferences and upgrade with: scoop update macshot"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/linzeyan/macshot/releases/download/v0.8.27/macshot-0.8.27-win-x64.zip",
+            "hash": "fa14eb2eaca40bafb1bcf9ef70606fe0d5790414bec7f6007963572b57fcfeb0"
+        },
+        "arm64": {
+            "url": "https://github.com/linzeyan/macshot/releases/download/v0.8.27/macshot-0.8.27-win-arm64.zip",
+            "hash": "880f7a9fc13ba0ee54f58f13b9dfb1080f78089c9888b531bd7e0c8334f5742e"
+        }
+    },
+    "shortcuts": [
+        [
+            "Macshot.Windows.exe",
+            "macshot"
+        ]
+    ]
+}

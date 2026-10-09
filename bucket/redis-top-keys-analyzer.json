@@ -1,0 +1,17 @@
+{
+    "version": "0.1.0",
+    "description": "Redis top keys memory analyzer CLI",
+    "homepage": "https://github.com/linzeyan/redis-top-keys-analyzer",
+    "license": "Unknown",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/linzeyan/redis-top-keys-analyzer/releases/download/v0.1.0/redis-top-keys-analyzer_0.1.0_windows_x86_64.zip",
+            "hash": "cd6d10cc2bd8855a20ef80a24ec3b455a0896ff7df25c67f8580b78b817ec1b5"
+        },
+        "arm64": {
+            "url": "https://github.com/linzeyan/redis-top-keys-analyzer/releases/download/v0.1.0/redis-top-keys-analyzer_0.1.0_windows_arm64.zip",
+            "hash": "62743e932095d0c60ecb5c77946de547b38235b66306b065b5e9126a0e077f43"
+        }
+    },
+    "bin": "redis-top-keys-analyzer.exe"
+}

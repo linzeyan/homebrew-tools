@@ -1,0 +1,22 @@
+{
+    "version": "0.1.2",
+    "description": "A modern, cross-platform desktop proxy client",
+    "homepage": "https://github.com/linzeyan/RayUI",
+    "license": "Unknown",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/linzeyan/RayUI/releases/download/v0.1.2/RayUI-windows-amd64-v0.1.2.zip",
+            "hash": "7a885488e36e14d4d313f7f51d60d682ae21305db47829ffd82e94e05bf59c2c"
+        },
+        "arm64": {
+            "url": "https://github.com/linzeyan/RayUI/releases/download/v0.1.2/RayUI-windows-arm64-v0.1.2.zip",
+            "hash": "d79276b966875db1eb088e5b9aeedf2fc4ba4400414949e13fac49077f5f74a1"
+        }
+    },
+    "shortcuts": [
+        [
+            "RayUI.exe",
+            "RayUI"
+        ]
+    ]
+}

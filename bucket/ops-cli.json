@@ -1,0 +1,19 @@
+{
+    "version": "0.14.11",
+    "description": "Collection of useful tools for ops",
+    "homepage": "https://github.com/linzeyan/ops-cli",
+    "license": "Apache-2.0",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/linzeyan/ops-cli/releases/download/v0.14.11/ops-cli_v0.14.11_windows_amd64.zip",
+            "hash": "b57a72572e467147c755d1151cb66c6f19ef2321db5e96c45276c122ff7f67e0",
+            "extract_dir": "ops-cli_v0.14.11_windows_amd64"
+        },
+        "arm64": {
+            "url": "https://github.com/linzeyan/ops-cli/releases/download/v0.14.11/ops-cli_v0.14.11_windows_arm64.zip",
+            "hash": "ff2f1b818bb260420aea785240ce9f0c0da4eb90dab0c50798456701f79aad2b",
+            "extract_dir": "ops-cli_v0.14.11_windows_arm64"
+        }
+    },
+    "bin": "ops-cli.exe"
+}

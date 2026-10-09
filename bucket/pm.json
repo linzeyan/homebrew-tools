@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "description": "Proxy Manager CLI",
+    "homepage": "https://github.com/linzeyan/proxy-manager",
+    "license": "Unknown",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/linzeyan/proxy-manager/releases/download/v0.2.0/pm_v0.2.0_windows_amd64.zip",
+            "hash": "2a2734047465a29e2771dc7b5b5f0a4983ff5ecf61871d56223795c26025189d",
+            "bin": [
+                [
+                    "pm_v0.2.0_windows_amd64.exe",
+                    "pm"
+                ]
+            ]
+        },
+        "arm64": {
+            "url": "https://github.com/linzeyan/proxy-manager/releases/download/v0.2.0/pm_v0.2.0_windows_arm64.zip",
+            "hash": "6f1cb9d2dbac1222b7430abf6046a0edfc2c8c26cb1d1f2bcb5bb676022c259b",
+            "bin": [
+                [
+                    "pm_v0.2.0_windows_arm64.exe",
+                    "pm"
+                ]
+            ]
+        }
+    }
+}
