@@ -1,5 +1,5 @@
 {
-    "version": "0.2.4",
+    "version": "0.2.6",
     "description": "Lightweight tabbed browser for low-memory Windows/VDI, built on Edge WebView2",
     "homepage": "https://github.com/linzeyan/LiteBrowser",
     "license": "GPL-3.0-only",
@@ -9,8 +9,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/linzeyan/LiteBrowser/releases/download/v0.2.4/LiteBrowser-windows-x64.zip",
-            "hash": "33c2e437035e6a5c903d0e6742bbf156a7ccb7820eab310db324227c21a55b85"
+            "url": "https://github.com/linzeyan/LiteBrowser/releases/download/v0.2.6/LiteBrowser-windows-x64.zip",
+            "hash": "62c9337db9af4fbaabc97fd3903e37cbe35dbe4aff9ada32d2f0b750d47ba8ee"
         }
     },
     "shortcuts": [
