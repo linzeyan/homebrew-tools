@@ -1,5 +1,5 @@
 {
-    "version": "0.111.0",
+    "version": "0.112.1",
     "description": "Small, portable Postman-style API client (GUI and CLI)",
     "homepage": "https://github.com/linzeyan/testing",
     "license": "Unknown",
@@ -9,8 +9,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/linzeyan/testing/releases/download/v0.111.0/apitool-v0.111.0-x86_64-pc-windows-msvc.zip",
-            "hash": "24b6e5b83be16d127dddd9d01a3edd851849f3ebce9da61464fd256a38d4a4a7"
+            "url": "https://github.com/linzeyan/testing/releases/download/v0.112.1/apitool-v0.112.1-x86_64-pc-windows-msvc.zip",
+            "hash": "dc3ef3522a703bde1383e003951193bb734f3dee1e4d31ae100fc6b9a23d180b"
         }
     },
     "bin": "apitool-cli.exe",

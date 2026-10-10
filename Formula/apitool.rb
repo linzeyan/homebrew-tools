@@ -4,20 +4,20 @@
 class Apitool < Formula
   desc "Small, portable Postman-style API client (GUI and CLI)"
   homepage "https://github.com/linzeyan/testing"
-  version "0.111.0"
+  version "0.112.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/linzeyan/testing/releases/download/v0.111.0/apitool-v0.111.0-x86_64-apple-darwin.tar.gz"
-      sha256 "2319311423b642243c2bbb2394d49d64ceae19f4822216caa0c22a0030bd4dec"
+      url "https://github.com/linzeyan/testing/releases/download/v0.112.1/apitool-v0.112.1-x86_64-apple-darwin.tar.gz"
+      sha256 "a9932317eb2fc1337f18b6de61e321a88a29aa4c4e878018ac07c54d7fbc4da7"
 
       def install
         bin.install "apitool", "apitool-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/linzeyan/testing/releases/download/v0.111.0/apitool-v0.111.0-aarch64-apple-darwin.tar.gz"
-      sha256 "ecd4913f0fee2004745ea37ae261438e1e7620096484732f9aa5b8a704b65dfd"
+      url "https://github.com/linzeyan/testing/releases/download/v0.112.1/apitool-v0.112.1-aarch64-apple-darwin.tar.gz"
+      sha256 "c9a497730a25718b8c59e15b904438a3f0de2fada1d1e2fd5d39751d6de1f650"
 
       def install
         bin.install "apitool", "apitool-cli"
@@ -27,8 +27,8 @@ class Apitool < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/linzeyan/testing/releases/download/v0.111.0/apitool-v0.111.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "d7da5c1e127340e64343ee9764e4db3ab271f1db8474d2d20c145601f5bc66b5"
+      url "https://github.com/linzeyan/testing/releases/download/v0.112.1/apitool-v0.112.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ce049b9bc246e1e4dabdef399ffc809d46b20ee57217c115047aeffe07603ed6"
 
       def install
         bin.install "apitool", "apitool-cli"
