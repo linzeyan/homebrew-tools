@@ -3,6 +3,10 @@
     "description": "Lightweight tabbed browser for low-memory Windows/VDI, built on Edge WebView2",
     "homepage": "https://github.com/linzeyan/LiteBrowser",
     "license": "GPL-3.0-only",
+    "notes": [
+        "LiteBrowser updates itself in place, which bypasses Scoop.",
+        "Set auto_update = false in its config.toml and upgrade with: scoop update litebrowser"
+    ],
     "architecture": {
         "64bit": {
             "url": "https://github.com/linzeyan/LiteBrowser/releases/download/v0.2.4/LiteBrowser-windows-x64.zip",
