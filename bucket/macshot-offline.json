@@ -1,5 +1,5 @@
 {
-    "version": "0.8.27",
+    "version": "0.8.28",
     "description": "Native Windows screenshot and recording tool, built without any network features",
     "homepage": "https://github.com/linzeyan/macshot",
     "license": "GPL-3.0-only",
@@ -9,12 +9,12 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/linzeyan/macshot/releases/download/v0.8.27/macshot-Offline-0.8.27-win-x64.zip",
-            "hash": "cce044385922e2765c8a62c5b8f5dc7c8d26d9c0f821362585425daacac635dd"
+            "url": "https://github.com/linzeyan/macshot/releases/download/v0.8.28/macshot-Offline-0.8.28-win-x64.zip",
+            "hash": "d41f0f43fe8427625ff343cbf7e486453b4be4e24616874916415acc5cca470b"
         },
         "arm64": {
-            "url": "https://github.com/linzeyan/macshot/releases/download/v0.8.27/macshot-Offline-0.8.27-win-arm64.zip",
-            "hash": "e38678d6243424f198d4597fdd8b496b4c08b1b9a1aef7083ad0032daa0d8c67"
+            "url": "https://github.com/linzeyan/macshot/releases/download/v0.8.28/macshot-Offline-0.8.28-win-arm64.zip",
+            "hash": "8c25cbd5259d82fcf0917c2ca9caad41947504841a187e5c6569e131b8656b82"
         }
     },
     "shortcuts": [
