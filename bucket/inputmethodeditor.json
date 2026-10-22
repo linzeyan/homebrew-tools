@@ -1,0 +1,37 @@
+{
+    "version": "0.7.1",
+    "description": "Chinese IME for Windows (Zhuyin/Bopomofo, Pinyin, Shuangpin) built on libchewing",
+    "homepage": "https://github.com/linzeyan/InputMethodEditor",
+    "license": "GPL-3.0-only",
+    "notes": [
+        "Installs system-wide through the MSI and asks for administrator rights (UAC).",
+        "InputMethodEditor updates itself in place, which bypasses Scoop.",
+        "Turn off automatic update checks in Settings > About and upgrade with: scoop update inputmethodeditor",
+        "User dictionary and settings are kept on uninstall: %AppData%\\InputMethodEditor and HKCU\\Software\\InputMethodEditor"
+    ],
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/linzeyan/InputMethodEditor/releases/download/v0.7.1/InputMethodEditor.msi#/InputMethodEditor.msi_",
+            "hash": "cde1fba5849775bd9f22dc9e3ed4149d6d08e0df4e31c9289daf69e35c9852f7"
+        }
+    },
+    "installer": {
+        "script": [
+            "# The .msi_ rename stops Scoop from unpacking the MSI; the IME must be registered by a real install.",
+            "$msi = \"$dir\\InputMethodEditor.msi\"",
+            "Move-Item -Force \"$dir\\InputMethodEditor.msi_\" $msi",
+            "$p = Start-Process msiexec.exe -ArgumentList '/i', \"`\"$msi`\"\", '/qn', '/norestart' -Verb RunAs -Wait -PassThru",
+            "if ($p.ExitCode -notin 0, 3010) { throw \"msiexec /i failed with exit code $($p.ExitCode)\" }"
+        ]
+    },
+    "uninstaller": {
+        "script": [
+            "# Look up the installed ProductCode: the in-app updater may have replaced the version Scoop installed.",
+            "$keys = Get-ChildItem HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall | Get-ItemProperty | Where-Object { $_.DisplayName -eq 'InputMethodEditor' }",
+            "foreach ($k in $keys) {",
+            "    $p = Start-Process msiexec.exe -ArgumentList '/x', $k.PSChildName, '/qn', '/norestart' -Verb RunAs -Wait -PassThru",
+            "    if ($p.ExitCode -notin 0, 3010) { throw \"msiexec /x failed with exit code $($p.ExitCode)\" }",
+            "}"
+        ]
+    }
+}

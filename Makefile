@@ -1,6 +1,6 @@
 FORMULAS := formatter ops-cli redis-top-keys-analyzer pm apitool poly gowebp
-CASKS := rayui asdf-gui assistant marknote dbclient
-SCOOP := litebrowser macshot macshot-offline
+CASKS := rayui asdf-gui assistant marknote dbclient wifidetect
+SCOOP := litebrowser macshot macshot-offline inputmethodeditor
 
 .PHONY: all $(FORMULAS) $(CASKS) $(SCOOP) clean
 
@@ -51,6 +51,9 @@ marknote:
 dbclient:
 	@./scripts/update-cask.sh linzeyan/dbeaver Casks/dbclient.rb
 
+wifidetect:
+	@./scripts/update-cask.sh linzeyan/WiFiDetect Casks/wifidetect.rb
+
 litebrowser:
 	@./scripts/update-scoop.sh linzeyan/LiteBrowser bucket/litebrowser.json
 
@@ -59,6 +62,9 @@ macshot:
 
 macshot-offline:
 	@./scripts/update-scoop.sh linzeyan/macshot bucket/macshot-offline.json
+
+inputmethodeditor:
+	@./scripts/update-scoop.sh linzeyan/InputMethodEditor bucket/inputmethodeditor.json
 
 clean:
 	@echo "Nothing to clean"
