@@ -1,5 +1,5 @@
 FORMULAS := formatter ops-cli redis-top-keys-analyzer pm apitool poly gowebp
-CASKS := rayui asdf-gui assistant marknote dbclient wifidetect
+CASKS := rayui asdf-gui assistant marknote dbclient wifidetect fontsmaker
 SCOOP := litebrowser macshot macshot-offline inputmethodeditor
 
 .PHONY: all $(FORMULAS) $(CASKS) $(SCOOP) clean
@@ -53,6 +53,9 @@ dbclient:
 
 wifidetect:
 	@./scripts/update-cask.sh linzeyan/WiFiDetect Casks/wifidetect.rb
+
+fontsmaker:
+	@./scripts/update-cask.sh linzeyan/FontsMaker Casks/fontsmaker.rb
 
 litebrowser:
 	@./scripts/update-scoop.sh linzeyan/LiteBrowser bucket/litebrowser.json
