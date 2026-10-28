@@ -1,16 +1,16 @@
 {
-    "version": "0.19.1",
+    "version": "0.19.2",
     "description": "Lint and format CLI for 30+ languages, shared with the poly VSCode extensions",
     "homepage": "https://github.com/linzeyan/vscode-syntax",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/linzeyan/vscode-syntax/releases/download/v0.19.1/poly-win32-x64.exe#/poly.exe",
-            "hash": "b1322559e10b0f77ac74438774637737ae219385eedc2cfe103533e179ac864a"
+            "url": "https://github.com/linzeyan/vscode-syntax/releases/download/v0.19.2/poly-win32-x64.exe#/poly.exe",
+            "hash": "622cfbc9d9e5287bba3df11f12c61e319c5d0c91ab77116668bca21431fd0581"
         },
         "arm64": {
-            "url": "https://github.com/linzeyan/vscode-syntax/releases/download/v0.19.1/poly-win32-arm64.exe#/poly.exe",
-            "hash": "726253ffe3876e689adebc2976febe20e89f05bfff41c8788f2954018dd8673a"
+            "url": "https://github.com/linzeyan/vscode-syntax/releases/download/v0.19.2/poly-win32-arm64.exe#/poly.exe",
+            "hash": "78f20ba2469ad192879ca994405c30c4e7f55fedbb3d7c670e9867ec8b20d4de"
         }
     },
     "bin": "poly.exe"
