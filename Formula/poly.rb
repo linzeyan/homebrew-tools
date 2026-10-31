@@ -4,20 +4,20 @@
 class Poly < Formula
   desc "Lint and format CLI for 30+ languages, shared with the poly VSCode extension"
   homepage "https://github.com/linzeyan/vscode-syntax"
-  version "0.20.0"
+  version "0.21.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/linzeyan/vscode-syntax/releases/download/v0.20.0/poly-darwin-x64"
-      sha256 "77384b889795d257971cd74eb67d0695b39e912da6fc8c143ed1507fb1849173"
+      url "https://github.com/linzeyan/vscode-syntax/releases/download/v0.21.2/poly-darwin-x64"
+      sha256 "74adf4e5f3014551575733a3c2324146e4157e16a9dfd0032dc483b4b7210d76"
 
       def install
         bin.install "poly-darwin-x64" => "poly"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/linzeyan/vscode-syntax/releases/download/v0.20.0/poly-darwin-arm64"
-      sha256 "31543772ff77f9550db9f8ef4c0ef6be4f8711af54c6218ea9057378e9e37e8f"
+      url "https://github.com/linzeyan/vscode-syntax/releases/download/v0.21.2/poly-darwin-arm64"
+      sha256 "425eed2ccfdd56078113250055902d7c049eb0d2b3a13497983429ac1c95c6af"
 
       def install
         bin.install "poly-darwin-arm64" => "poly"
@@ -27,16 +27,16 @@ class Poly < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/linzeyan/vscode-syntax/releases/download/v0.20.0/poly-linux-x64"
-      sha256 "488775ac4057919798de7734438ca50ab849fb762162e938278fc103b7635cfb"
+      url "https://github.com/linzeyan/vscode-syntax/releases/download/v0.21.2/poly-linux-x64"
+      sha256 "c3595edb40907a95e88d0d1657b6bb12b86053d5f15c42bac9a765c3a342ff37"
 
       def install
         bin.install "poly-linux-x64" => "poly"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/linzeyan/vscode-syntax/releases/download/v0.20.0/poly-linux-arm64"
-      sha256 "92b26473f6bbf5c1c16bf64c4cb93de9f5366d0db330d910db46cc5a5d0f0930"
+      url "https://github.com/linzeyan/vscode-syntax/releases/download/v0.21.2/poly-linux-arm64"
+      sha256 "011b3e3240af5f680baf4891ed98c21a7cb17241505fc6851bb81e32b5a9a382"
 
       def install
         bin.install "poly-linux-arm64" => "poly"
