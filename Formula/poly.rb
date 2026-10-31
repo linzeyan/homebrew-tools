@@ -2,7 +2,7 @@
 # frozen_string_literal: true
 
 class Poly < Formula
-  desc "Lint and format CLI for 30+ languages, shared with the poly VSCode extensions"
+  desc "Lint and format CLI for 30+ languages, shared with the poly VSCode extension"
   homepage "https://github.com/linzeyan/vscode-syntax"
   version "0.20.0"
 
