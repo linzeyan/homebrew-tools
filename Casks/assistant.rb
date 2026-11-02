@@ -1,6 +1,6 @@
 cask "assistant" do
-  version "0.4.0"
-  sha256 "bf6dc0f9a88070c29ee8944d3a264f2326638aacf8120521dfc48de962357761"
+  version "0.5.0"
+  sha256 "2ce5cd8a3b81dc1828afc5c97dbc749b311a0d90721060f66a5146990a79d25d"
 
   url "https://github.com/linzeyan/assistant/releases/download/v#{version}/Assistant.app.zip"
   name "Assistant"
