@@ -1,5 +1,5 @@
 {
-    "version": "0.8.31",
+    "version": "0.8.32",
     "description": "Native Windows screenshot and recording tool",
     "homepage": "https://github.com/linzeyan/macshot",
     "license": "GPL-3.0-only",
@@ -9,12 +9,12 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/linzeyan/macshot/releases/download/v0.8.31/macshot-0.8.31-win-x64.zip",
-            "hash": "9650a94995840be30fc96c553ed98e6757c95c43d453eba7515fe8b1a1b8915e"
+            "url": "https://github.com/linzeyan/macshot/releases/download/v0.8.32/macshot-0.8.32-win-x64.zip",
+            "hash": "57e8d32998596bbdb8804e8b2d89ddc85614663d11f21453debb22c869f0d589"
         },
         "arm64": {
-            "url": "https://github.com/linzeyan/macshot/releases/download/v0.8.31/macshot-0.8.31-win-arm64.zip",
-            "hash": "efbacecc9c6a426f289f82e54f2f16c620cf31cc6b71b119660a8b338ce91088"
+            "url": "https://github.com/linzeyan/macshot/releases/download/v0.8.32/macshot-0.8.32-win-arm64.zip",
+            "hash": "56448f9a4ceb716f188c0ddd757ac91db9daddf8285d29140258ba197671bcd5"
         }
     },
     "shortcuts": [
