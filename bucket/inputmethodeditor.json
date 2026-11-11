@@ -1,5 +1,5 @@
 {
-    "version": "0.7.1",
+    "version": "0.8.0",
     "description": "Chinese IME for Windows (Zhuyin/Bopomofo, Pinyin, Shuangpin) built on libchewing",
     "homepage": "https://github.com/linzeyan/InputMethodEditor",
     "license": "GPL-3.0-only",
@@ -11,8 +11,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/linzeyan/InputMethodEditor/releases/download/v0.7.1/InputMethodEditor.msi#/InputMethodEditor.msi_",
-            "hash": "cde1fba5849775bd9f22dc9e3ed4149d6d08e0df4e31c9289daf69e35c9852f7"
+            "url": "https://github.com/linzeyan/InputMethodEditor/releases/download/v0.8.0/InputMethodEditor.msi#/InputMethodEditor.msi_",
+            "hash": "c452396f65a6d036f0b1f225228a71947c588d8a7cb9c5d59ca7147864f1f70a"
         }
     },
     "installer": {
