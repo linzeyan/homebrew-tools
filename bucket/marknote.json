@@ -1,12 +1,12 @@
 {
-    "version": "0.8.0",
+    "version": "0.8.1",
     "description": "A modern, local-first WYSIWYG Markdown editor built with Tauri, React, and CodeMirror 6.",
     "homepage": "https://marknote.pages.dev",
     "license": "Unknown",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Cacao-s/marknote-official/releases/download/v0.8.0/MarkNote_0.8.0_x64-setup.exe#/dl.7z",
-            "hash": "71e0c83078721d39eea8dc0c373aeb11374f2f832451e0c7c01d3e3c79174405"
+            "url": "https://github.com/Cacao-s/marknote-official/releases/download/v0.8.1/MarkNote_0.8.1_x64-setup.exe#/dl.7z",
+            "hash": "7951cf8fe697a417d1e37be760f4048b543a5b401a296c4485749d5dc60ce835"
         }
     },
     "post_install": "Remove-Item \"$dir\\`$PLUGINSDIR\", \"$dir\\uninstall.exe\" -Force -Recurse -ErrorAction Ignore",
