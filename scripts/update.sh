@@ -69,7 +69,9 @@ URLS=$(grep -E '^[[:space:]]*url "' "$FORMULA_FILE" | sed -E 's/.*"([^"]+)".*/\1
 
 while read -r URL; do
     echo "Fetching $URL..."
-    SHA256=$(curl -sL "$URL" | shasum -a 256 | cut -d ' ' -f 1)
+    # -f and pipefail: a failed download must stop the run, not be hashed as the
+    # release asset (a 404 page, or an empty body).
+    SHA256=$(set -o pipefail; curl -fsSL "$URL" | shasum -a 256 | cut -d ' ' -f 1)
     if [ -z "$SHA256" ]; then
         echo "Error: Could not calculate SHA256 for $URL"
         continue
